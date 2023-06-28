@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<head>
+  <title>Temperature Converter</title>
+  <style>
+    body {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height:90vh;
+        color: #DAFFFB;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+        background-color: #001C30;
+    }
+    h2{
+        font-size: 3rem;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    input {
+        padding: 5px;
+        font-size: 16px;
+
+    }
+    span{
+        color: aqua;
+    }
+    .write{
+        border:none;
+        background-color: #f2f2f2;
+        width: 200px;
+        margin-right:10px;
+        border-radius: 3px;
+        outline:none;
+    }
+    .write::placeholder{
+        color:#222;
+    }
+    p{
+        color:#F86F03;
+        font-size: 1.5rem;
+    }
+    
+    button {
+  background: #073654;
+  background-image: -webkit-linear-gradient(top, #073654, #4d9ed1);
+  background-image: -moz-linear-gradient(top, #073654, #4d9ed1);
+  background-image: -ms-linear-gradient(top, #073654, #4d9ed1);
+  background-image: -o-linear-gradient(top, #073654, #4d9ed1);
+  background-image: linear-gradient(to bottom, #073654, #4d9ed1);
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  font-family: Arial;
+  color: #DAFFFB;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+}
+
+button:hover {
+  background: #37b2db;
+  background-image: -webkit-linear-gradient(top, #37b2db, #23877f);
+  background-image: -moz-linear-gradient(top, #37b2db, #23877f);
+  background-image: -ms-linear-gradient(top, #37b2db, #23877f);
+  background-image: -o-linear-gradient(top, #37b2db, #23877f);
+  background-image: linear-gradient(to bottom, #37b2db, #23877f);
+  text-decoration: none;
+}
+
+
+  </style>
+</head>
+<body>
+    <div>
+    <h2>Temperature <span>Converter</span></h2>
+  
+    <input class="write" type="text" id="temperature" placeholder="Enter temperature">
+  
+    <label for="fahrenheit">Fahrenheit</label>
+    <input type="radio" id="fahrenheit" name="unit" checked>
+  
+    <label for="celsius">Celsius</label>
+    <input type="radio" id="celsius" name="unit">
+  
+  <br>
+  <br>
+  
+    <button onclick="convertTemperature()">Convert</button>
+  
+  <p id="result"></p>
+</div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
